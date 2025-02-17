@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="lo">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ລະບົບ POS ພື້ນຖານ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="products" id="productList">
+            <!-- ສິນຄ້າຈະຖືກເພີ່ມໂດຍ JavaScript -->
+        </div>
+
+        <div class="cart">
+            <h2>ກະຕ່າສິນຄ້າ</h2>
+            <div class="cart-items" id="cartItems">
+                <!-- ລາຍການສິນຄ້າໃນກະຕ່າຈະຖືກເພີ່ມໂດຍ JavaScript -->
+            </div>
+            <div class="cart-total">
+                <span>ລວມທັງໝົດ:</span>
+                <span id="totalAmount">₭0</span>
+            </div>
+            <div class="payment-section">
+                <div class="input-group">
+                    <label>ຈຳນວນເງິນທີ່ຮັບ:</label>
+                    <input type="number" id="receivedAmount" class="payment-input" placeholder="ປ້ອນຈຳນວນເງິນ">
+                </div>
+                <div class="change-amount">
+                    <span>ເງິນທອນ:</span>
+                    <span id="changeAmount">₭0</span>
+                </div>
+            </div>
+            <button class="btn" onclick="processPayment()">ຊຳລະເງິນ</button>
+            <button class="btn btn-danger" onclick="clearCart()">ລ້າງກະຕ່າ</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
